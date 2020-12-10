@@ -9,6 +9,10 @@ import MobileCoreServices
 import Photos
 import CoreML
 
+func * <T>(left: [T], right: Int) -> [T] {
+    return (0..<(right*left.count)).map{left[$0%left.count]}
+}
+
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
   
   @IBOutlet weak var loadingView: UIView!
@@ -24,15 +28,15 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
 
   private class func loadModel() -> [MLModel] {
     let config = MLModelConfiguration()
-    config.computeUnits = .all
+    config.computeUnits = .cpuOnly  // gpu result is not correct on iphone 8, 13.5.1
     var models : [MLModel]
     do {
-      try models = [
-        wave(configuration: config).model,
-        udnie(configuration: config).model,
-        rain_princess(configuration: config).model,
+      try models = [ // loading more than 1 model can result in crash on iphone 8, 13.5.1
+//        wave(configuration: config).model,
+//        udnie(configuration: config).model,
+//        rain_princess(configuration: config).model,
         la_muse(configuration: config).model
-      ]
+      ] * 4
       return models
     } catch {
       fatalError("Can't initialize model")
