@@ -119,8 +119,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     // MARK: - UIImagePickerControllerDelegate
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+      if let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
             inputImage = image
             imageView.image = image
         }
