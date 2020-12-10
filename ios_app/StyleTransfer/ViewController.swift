@@ -20,12 +20,24 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
   private var inputImage = UIImage(named: "chicago")!
   
   // make sure you download the models and import them
-  private let models = [
-    wave().model,
-    udnie().model,
-    rain_princess().model,
-    la_muse().model
-  ]
+  private let models = loadModel()
+
+  private class func loadModel() -> [MLModel] {
+    let config = MLModelConfiguration()
+    config.computeUnits = .all
+    var models : [MLModel]
+    do {
+      try models = [
+        wave(configuration: config).model,
+        udnie(configuration: config).model,
+        rain_princess(configuration: config).model,
+        la_muse(configuration: config).model
+      ]
+      return models
+    } catch {
+      fatalError("Can't initialize model")
+    }
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
