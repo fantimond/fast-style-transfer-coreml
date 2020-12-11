@@ -38,7 +38,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
 //        udnie(configuration: config).model,
 //        rain_princess(configuration: config).model,
 //        la_muse(configuration: cpuConfig).model,
-        sr360(configuration: gpuConfig).model
+        sr360_228(configuration: gpuConfig).model
       ] * 4
       return models
     } catch {
