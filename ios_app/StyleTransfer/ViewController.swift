@@ -21,7 +21,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
   
   @IBOutlet weak var imageView: UIImageView!
   
-  private var inputImage = UIImage(named: "p360")!
+  private var inputImage = UIImage(named: "p540")!
   
   // make sure you download the models and import them
   private let models = loadModel()
@@ -38,7 +38,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
 //        udnie(configuration: config).model,
 //        rain_princess(configuration: config).model,
 //        la_muse(configuration: cpuConfig).model,
-        sr360_228(configuration: gpuConfig).model
+        sr540(configuration: gpuConfig).model
       ] * 4
       return models
     } catch {
@@ -154,7 +154,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
   // MARK: - Processing
   private func stylizeImage(cgImage: CGImage, model: MLModel) -> CGImage {
     
-    let input = StyleTransferInput(input: pixelBuffer(cgImage: cgImage, width: 360, height: 640))
+    let input = StyleTransferInput(input: pixelBuffer(cgImage: cgImage, width: 540, height: 960))
     
     let startTime = Date().timeIntervalSince1970
     let outFeatures = try! model.prediction(from: input)
