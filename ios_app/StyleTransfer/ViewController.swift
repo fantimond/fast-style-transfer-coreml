@@ -151,9 +151,12 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
   // MARK: - Processing
   private func stylizeImage(cgImage: CGImage, model: MLModel) -> CGImage {
     
-    let input = StyleTransferInput(input: pixelBuffer(cgImage: cgImage, width: 883, height: 720))
+    let input = StyleTransferInput(input: pixelBuffer(cgImage: cgImage, width: 360, height: 640))
     
+    let startTime = Date().timeIntervalSince1970
     let outFeatures = try! model.prediction(from: input)
+    let endTime = Date().timeIntervalSince1970
+    print("predict time: \(Int((endTime - startTime) * 1000)) ms")
     let output = outFeatures.featureValue(for: "add_37__0")!.imageBufferValue!
     CVPixelBufferLockBaseAddress(output, .readOnly)
     let width = CVPixelBufferGetWidth(output)
