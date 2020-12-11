@@ -21,21 +21,24 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
   
   @IBOutlet weak var imageView: UIImageView!
   
-  private var inputImage = UIImage(named: "chicago")!
+  private var inputImage = UIImage(named: "p360")!
   
   // make sure you download the models and import them
   private let models = loadModel()
 
   private class func loadModel() -> [MLModel] {
-    let config = MLModelConfiguration()
-    config.computeUnits = .cpuOnly  // gpu result is not correct on iphone 8, 13.5.1
+    let cpuConfig = MLModelConfiguration()
+    cpuConfig.computeUnits = .cpuOnly  // gpu result is not correct on iphone 8, 13.5.1
+    let gpuConfig = MLModelConfiguration()
+    gpuConfig.computeUnits = .all
     var models : [MLModel]
     do {
       try models = [ // loading more than 1 model can result in crash on iphone 8, 13.5.1
 //        wave(configuration: config).model,
 //        udnie(configuration: config).model,
 //        rain_princess(configuration: config).model,
-        la_muse(configuration: config).model
+//        la_muse(configuration: cpuConfig).model,
+        sr360(configuration: gpuConfig).model
       ] * 4
       return models
     } catch {

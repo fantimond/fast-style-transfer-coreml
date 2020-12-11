@@ -16,6 +16,7 @@
 		AED0B10F25827E250037341B /* wave.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AED0B10B25827E250037341B /* wave.mlmodel */; };
 		AED0B11025827E250037341B /* udnie.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AED0B10C25827E250037341B /* udnie.mlmodel */; };
 		AED0B11125827E250037341B /* rain_princess.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AED0B10D25827E250037341B /* rain_princess.mlmodel */; };
+		AED0B19F258319090037341B /* sr360.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AED0B19E258319090037341B /* sr360.mlmodel */; };
 		DD3F24AA20094A2F00F2A754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD3F24A920094A2C00F2A754 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		AED0B10B25827E250037341B /* wave.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = wave.mlmodel; sourceTree = "<group>"; };
 		AED0B10C25827E250037341B /* udnie.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = udnie.mlmodel; sourceTree = "<group>"; };
 		AED0B10D25827E250037341B /* rain_princess.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = rain_princess.mlmodel; sourceTree = "<group>"; };
+		AED0B19E258319090037341B /* sr360.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = sr360.mlmodel; sourceTree = "<group>"; };
 		DD3F24A920094A2C00F2A754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +81,7 @@
 		164CAAC61F54C12B00A1CEF1 /* coreml_models */ = {
 			isa = PBXGroup;
 			children = (
+				AED0B19E258319090037341B /* sr360.mlmodel */,
 				AED0B10A25827E250037341B /* la_muse.mlmodel */,
 				AED0B10D25827E250037341B /* rain_princess.mlmodel */,
 				AED0B10C25827E250037341B /* udnie.mlmodel */,
@@ -162,6 +165,7 @@
 				AED0B11125827E250037341B /* rain_princess.mlmodel in Sources */,
 				167819161F54F73C009973BB /* StyleTransferInput.swift in Sources */,
 				AED0B10E25827E250037341B /* la_muse.mlmodel in Sources */,
+				AED0B19F258319090037341B /* sr360.mlmodel in Sources */,
 				AED0B11025827E250037341B /* udnie.mlmodel in Sources */,
 				1622C3CC1F3269580059889E /* ViewController.swift in Sources */,
 				AED0B10F25827E250037341B /* wave.mlmodel in Sources */,

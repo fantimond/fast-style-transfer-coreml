@@ -64,7 +64,7 @@
                                     <action selector="styleButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X3f-pA-JaY"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chicago" translatesAutoresizingMaskIntoConstraints="NO" id="OoJ-TL-5sk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p360" translatesAutoresizingMaskIntoConstraints="NO" id="OoJ-TL-5sk">
                                 <rect key="frame" x="0.0" y="44" width="375" height="375"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -144,8 +144,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chicago" width="712" height="474"/>
         <image name="la_muse" width="600" height="300"/>
+        <image name="p360" width="360" height="640"/>
         <image name="rain_princess" width="600" height="400"/>
         <image name="udnie-1" width="600" height="350"/>
         <image name="wave" width="600" height="389"/>
