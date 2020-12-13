@@ -20,6 +20,7 @@
 		AED0B1A225832BB50037341B /* sr540.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AED0B1A125832BB50037341B /* sr540.mlmodel */; };
 		AED0B1AB2583A0AC0037341B /* sr360_228.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AED0B1AA2583A0AC0037341B /* sr360_228.mlmodel */; };
 		AED0B1B625860BA50037341B /* sr720.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AED0B1B525860BA50037341B /* sr720.mlmodel */; };
+		AED0B1B925860CCC0037341B /* sr1080.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AED0B1B825860CCC0037341B /* sr1080.mlmodel */; };
 		DD3F24AA20094A2F00F2A754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD3F24A920094A2C00F2A754 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		AED0B1A125832BB50037341B /* sr540.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = sr540.mlmodel; sourceTree = "<group>"; };
 		AED0B1AA2583A0AC0037341B /* sr360_228.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = sr360_228.mlmodel; sourceTree = "<group>"; };
 		AED0B1B525860BA50037341B /* sr720.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = sr720.mlmodel; sourceTree = "<group>"; };
+		AED0B1B825860CCC0037341B /* sr1080.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = sr1080.mlmodel; sourceTree = "<group>"; };
 		DD3F24A920094A2C00F2A754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 		164CAAC61F54C12B00A1CEF1 /* coreml_models */ = {
 			isa = PBXGroup;
 			children = (
+				AED0B1B825860CCC0037341B /* sr1080.mlmodel */,
 				AED0B1B525860BA50037341B /* sr720.mlmodel */,
 				AED0B1AA2583A0AC0037341B /* sr360_228.mlmodel */,
 				AED0B1A125832BB50037341B /* sr540.mlmodel */,
@@ -175,6 +178,7 @@
 				AED0B1A225832BB50037341B /* sr540.mlmodel in Sources */,
 				167819161F54F73C009973BB /* StyleTransferInput.swift in Sources */,
 				AED0B10E25827E250037341B /* la_muse.mlmodel in Sources */,
+				AED0B1B925860CCC0037341B /* sr1080.mlmodel in Sources */,
 				AED0B19F258319090037341B /* sr360.mlmodel in Sources */,
 				AED0B1B625860BA50037341B /* sr720.mlmodel in Sources */,
 				AED0B11025827E250037341B /* udnie.mlmodel in Sources */,
