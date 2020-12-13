@@ -64,7 +64,7 @@
                                     <action selector="styleButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X3f-pA-JaY"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p540" translatesAutoresizingMaskIntoConstraints="NO" id="OoJ-TL-5sk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p720" translatesAutoresizingMaskIntoConstraints="NO" id="OoJ-TL-5sk">
                                 <rect key="frame" x="0.0" y="44" width="375" height="375"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -145,7 +145,7 @@
     </scenes>
     <resources>
         <image name="la_muse" width="600" height="300"/>
-        <image name="p540" width="540" height="960"/>
+        <image name="p720" width="720" height="1280"/>
         <image name="rain_princess" width="600" height="400"/>
         <image name="udnie-1" width="600" height="350"/>
         <image name="wave" width="600" height="389"/>
